@@ -8,7 +8,7 @@
     "start:prod": "cd server && npm start",
     "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "heroku-postbuild": "cd client && npm run build"
+    "build": "cd client && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,6 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "apollo-server-express": "^3.4.0",
-    "graphql": "^15.6.1"
+    "if-env": "^1.0.4"
   }
 }
